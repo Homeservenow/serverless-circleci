@@ -1,6 +1,6 @@
 # serverless
 
-[![Build Status](https://img.shields.io/docker/build/alexhayton/serverless)](https://hub.docker.com/repository/docker/alexhayton/serverless)
+[![Build Status](https://img.shields.io/docker/cloud/build/alexhayton/serverless)](https://hub.docker.com/repository/docker/alexhayton/serverless)
 
 A [docker image](https://hub.docker.com/repository/docker/alexhayton/serverless) for running [serverless](https://serverless.com) commands.
 
