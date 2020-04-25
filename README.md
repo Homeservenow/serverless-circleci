@@ -1,32 +1,20 @@
-# serverless #
+# serverless
 
-[![Build Status](https://travis-ci.org/SoftInstigate/serverless-docker.svg?branch=master)](https://travis-ci.org/SoftInstigate/serverless-docker)
+[![Build Status](https://img.shields.io/docker/build/alexhayton/serverless)](https://hub.docker.com/repository/docker/alexhayton/serverless)
 
-A [docker image](https://hub.docker.com/r/softinstigate/serverless/) for running [serverless](https://serverless.com) commands.
+A [docker image](https://hub.docker.com/repository/docker/alexhayton/serverless) for running [serverless](https://serverless.com) commands.
 
 This can be useful for building and deploying serverless stacks from CI environments.
 
-The `RELEASE` global variable in [.travis.yml](.travis.yml) contains the [serverless release](https://github.com/serverless/serverless/releases) to be built.
+## Example
 
-## Example ##
-
-```
-$ docker pull softinstigate/serverless
-$ docker run --rm softinstigate/serverless --version
+```bash
+docker pull alexhayton/serverless
+docker run --rm alexhayton/serverless --version
 ```
 
-## Base image ##
+## What's in the image
 
-[softinstigate/maven-aws](https://hub.docker.com/r/softinstigate/maven-aws/)
+[circleci/node](https://hub.docker.com/r/circleci/node/)
 
-The base image is from the [maven](https://hub.docker.com/_/maven/) one, so it allows to also build serverless projects for **Java** .
-
-Included packages from base image:
-
-- [aws-cli](https://github.com/aws/aws-cli).
-- [ecs-cli](https://github.com/aws/amazon-ecs-cli)
-
-## Additional packages ##
-
-- Nodejs 10.x
-- Serverless cli
+The base image is ready to use with circleci. I have added AWS CLI and serverless to it.
