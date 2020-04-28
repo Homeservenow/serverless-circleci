@@ -1,6 +1,6 @@
 FROM circleci/node:12
 
-LABEL maintainer="Alex Hayton <alex.hayton@gmail.com"
+LABEL maintainer="Alex Hayton <alex.hayton@homeserve.com>"
 
 WORKDIR /home/circleci
 
