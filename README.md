@@ -1,8 +1,8 @@
 # serverless-circleci
 
-[![Build Status](https://img.shields.io/docker/cloud/build/homeservenow/serverless)](https://hub.docker.com/repository/docker/homeservenow/serverless)
+[![Build Status](https://img.shields.io/docker/cloud/build/homeservenow/serverless-circleci)](https://hub.docker.com/repository/docker/homeservenow/serverless-circleci)
 
-A [docker image](https://hub.docker.com/repository/docker/homeservenow/serverless) for running [serverless](https://serverless.com) commands.
+A [docker image](https://hub.docker.com/repository/docker/homeservenow/serverless-circleci) for running [serverless](https://serverless.com) commands.
 
 This can be useful for building and deploying serverless stacks from CI environments.
 
