@@ -6,11 +6,12 @@ WORKDIR /home/circleci
 
 RUN sudo apt-get install less
 
-# Install AWS CLI
+# Install AWS CLI and set TERM variable
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
   unzip awscliv2.zip && \
   sudo ./aws/install && \
   rm -rf aws
+ENV TERM=xterm-256color
 
 # Install ECS CLI
 RUN sudo curl -o "/usr/local/bin/ecs-cli" https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest && \
