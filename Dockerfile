@@ -7,7 +7,7 @@ WORKDIR /home/circleci
 RUN sudo apt-get install less
 
 # Install cypress dependencies
-RUN sudo apt-get install libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+RUN sudo apt-get install libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6
 
 # Install AWS CLI and set TERM variable
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
