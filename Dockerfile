@@ -1,4 +1,4 @@
-FROM circleci/node:12
+FROM circleci/node:12-buster
 
 LABEL maintainer="Alex Hayton <alex.hayton@homeserve.com>"
 
