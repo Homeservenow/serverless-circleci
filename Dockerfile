@@ -21,7 +21,7 @@ RUN sudo curl -o "/usr/local/bin/ecs-cli" https://amazon-ecs-cli.s3.amazonaws.co
     sudo chmod +x /usr/local/bin/ecs-cli
 
 # Install serverless CLI
-RUN yarn global add serverless && yarn cache clean
+RUN yarn global add serverless@2.4.0 && yarn cache clean
 
 ENV PATH=$PATH:/home/circleci/.yarn/bin
 
